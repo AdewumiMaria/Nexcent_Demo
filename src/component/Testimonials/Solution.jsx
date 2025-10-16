@@ -12,7 +12,6 @@ const Solution = () => {
   const { counts, increment } = useCounter();
   const { likes, increase, reset } = LikeCount();
   const { color, change } = ChangeColor();
-  const [login, setLogin] = useState(false);
 
   //useEffect
   useEffect(() => {
@@ -22,7 +21,7 @@ const Solution = () => {
   return (
     <section className="solution">
       <div className="container">
-        <Login isLogin={login} />
+        <Login isLogin={Login} />
         <div className="solution-sec">
           <div className="solution-sec1">
             <h1>Count: {count} </h1>
